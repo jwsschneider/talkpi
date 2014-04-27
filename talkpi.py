@@ -24,10 +24,10 @@ def main():
     GPIO.setup(11,GPIO.OUT) # setup pin 11 as an LED output
    
 
-    ‘’’
+    '''
     tell the GPIO library to look out for an 
     event on pin 12
-    ‘’’
+    '''
     GPIO.add_event_detect(12, GPIO.FALLING, bouncetime=200)
 
     # loop and wait for the button to be pressed
@@ -37,12 +37,12 @@ def main():
         if (GPIO.event_detected(12)):
             print "Button pressed at " + str(time.time()) # print when button was pressed to output log
             GPIO.output(11,True) # convert the blinking LED to a solid-burn to indicate that we’re playing the talking script now
-            ‘’’
+            '''
             This is the line of code that is executed on the command line when the button is pressed. There is nothing
             preventing you from changing this line of code to something else (playing music, for example). I have the 
             code executing espeak and reading a text script located on a USB drive. That way, a user can just swap out the
             USB drive’s text file to make the program say different things.
-            ‘’’
+            '''
             os.system('espeak -v us-mbrola-2 -f /media/C070-1328/text_db.txt --stdout | aplay')
 
             # reset the event detection
