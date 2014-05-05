@@ -21,7 +21,7 @@ I built stockpi on a Raspberry Pi (Model B, 256 MB RAM) running Raspian (wheezy)
 I designed the application to run without a monitor, keyboard, or mouse so it could be strapped to the back of a cardboard box. To ensure that it starts on boot, I created a cron job (run as sudo):
 
 ```
-@reboot  //home.pitalkpi/talkpi.sh
+@reboot  //home/pi/talkpi/talkpi.sh
 ```
 
 When you see the blinking status LED, you'll know that the application is running and listening for the button press!
