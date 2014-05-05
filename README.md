@@ -26,6 +26,12 @@ I designed the application to run without a monitor, keyboard, or mouse so it co
 
 When you see the blinking status LED, you'll know that the application is running and listening for the button press!
 
+
+**Circuit Diagram:**
+
+![Alt text](https://raw.githubusercontent.com/jwsschneider/talkpi/master/images/talkpi_circuit_diagram.png)
+
+
 **License:**
 
 All of the code and supporting files in the talkpi git repository are licensed under the Creative Commons Attribution-ShareAlike 4.0 International Public License (https://creativecommons.org/licenses/by-sa/4.0/legalcode and https://creativecommons.org/licenses/by-sa/4.0/). Anyone is free to take and modify the files as long as the attribution to its original author is maintained and the modifier agrees to, in turn, license his/her modified files under the Creative Commons Attribution-ShareAlike 4.0 International Public License, too.
